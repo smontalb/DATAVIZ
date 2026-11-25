@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aletsch / Massa • Watershed explorer</title><link rel="stylesheet" href="style.css">
+<header><h1>Aletsch <i>/</i> Massa</h1><span>Watershed explorer<br>Valais, Switzerland</span></header>
+<main><section class="stage"><div class="toolbar"><strong>Layers</strong><label><input type="checkbox" id="actors" checked> Actors</label><label><input type="checkbox" id="links"> Relationships</label><button id="reset">Reset view</button></div>
+<svg id="scene" viewBox="0 0 760 420" aria-label="Interactive three-dimensional watershed diagram"></svg><div class="hint">Drag to orbit · Scroll to zoom · Select any element <span>Schematic 3D view</span></div></section>
+<aside><small>FIELD NOTES</small><div id="info" aria-live="polite"></div></aside>
+<section class="timeline"><div class="timehead"><h2>Through time</h2><select id="metric" aria-label="Time series"><option>Glacier mass balance</option><option>River discharge</option></select></div><div id="periods"></div><div class="readout" id="result"></div></section></main>
+<script src="vendor/d3.v5.min.js"></script><script src="data.js"></script><script src="explore.js"></script></html>
